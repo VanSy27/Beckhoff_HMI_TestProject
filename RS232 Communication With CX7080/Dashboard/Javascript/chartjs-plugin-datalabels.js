@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * chartjs-plugin-datalabels v0.7.0
  * https://chartjs-plugin-datalabels.netlify.com
  * (c) 2019 Chart.js Contributors

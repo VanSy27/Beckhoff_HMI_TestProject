@@ -4,9 +4,6 @@
     <!--CycleTime in micro seconds.-->
     <CycleTime>2000</CycleTime>
     <Priority>1</Priority>
-    <PouCall>
-      <Name>PRG_ControlSerialLine</Name>
-    </PouCall>
     <TaskFBGuid>{d6ed4440-4a81-4344-9249-50e5779214c3}</TaskFBGuid>
     <Fb_init>{b90aff37-ca1b-4ab1-b2f0-a88608398fe2}</Fb_init>
     <Fb_exit>{432dca55-eb7e-4769-a13c-ec3ed98a8a7e}</Fb_exit>
