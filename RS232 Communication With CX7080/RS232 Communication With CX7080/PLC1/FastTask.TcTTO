@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <Task Name="FastTask" Id="{2a76fc35-7fc4-4076-ae6a-42a3da0eb719}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>2000</CycleTime>
+    <Priority>1</Priority>
+    <PouCall>
+      <Name>PRG_ControlSerialLine</Name>
+    </PouCall>
+    <TaskFBGuid>{d6ed4440-4a81-4344-9249-50e5779214c3}</TaskFBGuid>
+    <Fb_init>{b90aff37-ca1b-4ab1-b2f0-a88608398fe2}</Fb_init>
+    <Fb_exit>{432dca55-eb7e-4769-a13c-ec3ed98a8a7e}</Fb_exit>
+    <CycleUpdate>{98f6b38a-e4af-40fd-88b5-c2d32186bf75}</CycleUpdate>
+    <PostCycleUpdate>{4ad035be-6c26-4d3d-a0d5-e7303e3cd9b8}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

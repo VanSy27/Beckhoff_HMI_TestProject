@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="MAIN" Id="{2b30c86f-c39a-4e51-8d34-0affd763fdf3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	i: INT;
+	
+	nState: INT;
+	fbReceiveData: ReceiveData;
+	aReceiveData: ARRAY[1..6] OF BYTE;
+	aSuffixData: ARRAY[1..2] OF BYTE := [13, 10];
+	sDeviceId: STRING(80);
+	
+	nCursor: INT := 1;
+	nRegconizedDeviceIds: INT;
+	nTotalDevices: INT;
+	aNullId: ARRAY[1..4] OF BYTE;
+	aDeviceCount: ARRAY[1..10] OF ST_DeviceCount;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE nState OF
+	0: // Check if any data is received
+		IF GVL.RxBuffer.Count <> 0 THEN
+			nState := nState + 1;
+		END_IF
+	1: // Receive data
+		fbReceiveData(
+			pPrefix:= , 
+			LenPrefix:= , 
+			pSuffix:= ADR(aSuffixData), 
+			LenSuffix:= 2, 
+			pReceiveData:= ADR(aReceiveData), 
+			SizeReceiveData:= 6, 
+			Timeout:= T#1S, 
+			Reset:= , 
+			DataReceived=> , 
+			busy=> , 
+			Error=> , 
+			RxTimeout=> , 
+			LenReceiveData=> , 
+			RXbuffer:= GVL.RxBuffer);
+		IF NOT fbReceiveData.busy THEN
+			IF fbReceiveData.Error <> 0 THEN
+				nState := 100;
+			ELSE
+				IF fbReceiveData.LenReceiveData = 6 THEN
+					nState := nState + 1;
+				END_IF
+			END_IF
+		END_IF
+	2: // Get the barcode and check whether it was regconized
+		sDeviceId := '';
+		FOR i := 1 TO 4 DO
+			sDeviceId := CONCAT(sDeviceId, CHR(aReceiveData[i]));
+		END_FOR
+		nState := 3;		
+		FOR i := 1 TO 10 DO
+			IF MEMCMP(ADR(aDeviceCount[i].aId), ADR(aReceiveData), 4) = 0 THEN
+				nState := 4;
+				EXIT;
+			END_IF
+		END_FOR
+	3: // Realize the received barcode as a new barcode which was not known before
+		IF nCursor < 11 THEN
+			MEMCPY(ADR(aDeviceCount[nCursor].aId), ADR(aReceiveData), 4);
+			nRegconizedDeviceIds := nRegconizedDeviceIds + 1;
+			nCursor := nCursor + 1;
+			nState := nState + 1;
+		ELSE
+			nState := 100;		
+		END_IF
+	4: // Increase the number of time the received bar code read
+		FOR i := 1 TO 10 DO
+			IF MEMCMP(ADR(aDeviceCount[i].aId), ADR(aReceiveData), 4) = 0 THEN
+				aDeviceCount[i].nCount := aDeviceCount[i].nCount + 1;
+				EXIT;
+			END_IF
+		END_FOR
+		nTotalDevices := nTotalDevices + 1;
+		nState := 0;
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="198" Count="0" />
+      <LineId Id="200" Count="0" />
+      <LineId Id="202" Count="0" />
+      <LineId Id="208" Count="1" />
+      <LineId Id="203" Count="0" />
+      <LineId Id="230" Count="5" />
+      <LineId Id="328" Count="0" />
+      <LineId Id="237" Count="6" />
+      <LineId Id="204" Count="0" />
+      <LineId Id="343" Count="1" />
+      <LineId Id="346" Count="0" />
+      <LineId Id="348" Count="0" />
+      <LineId Id="456" Count="0" />
+      <LineId Id="349" Count="0" />
+      <LineId Id="457" Count="0" />
+      <LineId Id="347" Count="0" />
+      <LineId Id="345" Count="0" />
+      <LineId Id="205" Count="0" />
+      <LineId Id="342" Count="0" />
+      <LineId Id="350" Count="0" />
+      <LineId Id="352" Count="1" />
+      <LineId Id="377" Count="0" />
+      <LineId Id="362" Count="0" />
+      <LineId Id="372" Count="0" />
+      <LineId Id="374" Count="0" />
+      <LineId Id="376" Count="0" />
+      <LineId Id="375" Count="0" />
+      <LineId Id="373" Count="0" />
+      <LineId Id="371" Count="0" />
+      <LineId Id="391" Count="0" />
+      <LineId Id="394" Count="0" />
+      <LineId Id="561" Count="0" />
+      <LineId Id="395" Count="0" />
+      <LineId Id="392" Count="0" />
+      <LineId Id="397" Count="1" />
+      <LineId Id="393" Count="0" />
+      <LineId Id="379" Count="0" />
+      <LineId Id="381" Count="4" />
+      <LineId Id="380" Count="0" />
+      <LineId Id="560" Count="0" />
+      <LineId Id="386" Count="0" />
+      <LineId Id="201" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

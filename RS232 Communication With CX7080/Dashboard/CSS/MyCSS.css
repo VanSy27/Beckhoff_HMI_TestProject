@@ -1,0 +1,11 @@
+﻿.liam-chart-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.chart-note-value, .chart-note-percentage {
+    color : black;
+}
+#myPiePercentPower1Chart, #myPiePercentPower2Chart {
+    margin-left : -50px;
+}

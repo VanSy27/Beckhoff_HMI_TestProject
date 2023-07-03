@@ -1,0 +1,848 @@
+﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-mode="Value" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-min-height="100" data-tchmi-min-height-unit="%" data-tchmi-creator-viewport-width="1366" data-tchmi-creator-viewport-height="768" data-tchmi-is-enabled="true">
+  <div id="ViewDesktopBeckhoffLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/Beckhoff_Logo.svg" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-width="194" data-tchmi-height="57">
+
+  </div>
+<div id="TcHmiContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-top="144" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(238, 238, 238, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "offsetX": 5.0,
+    "offsetXUnit": "px",
+    "offsetY": 5.0,
+    "offsetYUnit": "px",
+    "inset": false,
+    "blur": 5.0,
+    "blurUnit": "px",
+    "spread": -1.0,
+    "spreadUnit": "px"
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="Read Device ID" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-font-weight="Normal">
+</div>
+<div id="TcHmiTextbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.sDeviceId|Interval=100%/s%" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="140" data-tchmi-width-unit="px" data-tchmi-auto-focus-out="false" data-tchmi-auto-select-text="false" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Right">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiContainer_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="110" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-top="243" data-tchmi-top-unit="px" data-tchmi-width="338" data-tchmi-width-unit="px" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(238, 238, 238, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "offsetX": 5.0,
+    "offsetXUnit": "px",
+    "offsetY": 5.0,
+    "offsetYUnit": "px",
+    "inset": false,
+    "blur": 5.0,
+    "blurUnit": "px",
+    "spread": -1.0,
+    "spreadUnit": "px"
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="Regconized IDs" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-font-weight="Normal">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="Total Devices" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-font-weight="Normal">
+</div>
+<div id="TcHmiTextbox_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.nRegconizedDeviceIds|Interval=100%/s%" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="140" data-tchmi-width-unit="px" data-tchmi-auto-focus-out="false" data-tchmi-auto-select-text="false" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Right">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextbox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.nTotalDevices|Interval=100%/s%" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="140" data-tchmi-width-unit="px" data-tchmi-auto-focus-out="false" data-tchmi-auto-select-text="false" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="24" data-tchmi-text-horizontal-alignment="Right">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+</div>
+<div id="TcHmiHtmlHost_PieChart" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-top="400" data-tchmi-top-unit="px" data-tchmi-width="343" data-tchmi-width-unit="px" data-tchmi-is-enabled="true">
+    <canvas id="PieChart" width="500" height="400"></canvas>
+    <script>
+        var nRegconizedDeviceIds2;
+        var nTotalDevices2;
+        var ctx2 = document.getElementById('PieChart');
+        var myPieChart = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Device Number',
+                    data: [],
+                    borderWidth: 1,
+                    backgroundColor: [
+                        'rgba(255, 83, 26, 0.9)',
+                        'rgba(255, 26, 26, 0.9)',
+                        'rgba(0, 230, 0, 0.9)',
+                        'rgba(0, 255, 128, 0.9)',
+                        'rgba(51, 102, 255, 0.9)',
+                        'rgba(26, 198, 255, 0.9)',
+                        'rgba(230, 0, 230, 0.9)'
+
+                    ],
+                    borderColor: [
+                        'rgba(255, 83, 26, 2)',
+                        'rgba(255, 26, 26, 2)',
+                        'rgba(0, 230, 0, 2)',
+                        'rgba(0, 153, 0, 2 )',
+                        'rgba(51, 102, 255, 2)',
+                        'rgba(26, 198, 255, 2)',
+                        'rgba(153, 0, 153, 2)'
+                    ],
+
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: 'black',
+                        fontStyle: 'bold',
+                    }
+
+                },
+                title: {
+                    display: true,
+                    fontStyle: 'bold',
+                    offset: -5,
+                    text: 'Pie Chart',
+                    fontColor: 'rgb(0, 0, 0)'
+                },
+                tooltips: {
+                    enabled: false
+                },
+                plugins: {
+                    datalabels: {
+                        color: 'rgba(255, 255, 255,0)',
+                        anchor: 'end',
+                        align: 'top',
+                        offset: 50,
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                },
+            }
+        });
+    </script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(238, 238, 238, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "offsetX": 0.0,
+    "offsetXUnit": "px",
+    "offsetY": 5.0,
+    "offsetYUnit": "px",
+    "inset": false,
+    "blur": 5.0,
+    "blurUnit": "px",
+    "spread": -1.0,
+    "spreadUnit": "px"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiHtmlHost_PieChart.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "let symRegconizedDeviceIds = new TcHmi.Symbol('%s%PLC1.MAIN.nRegconizedDeviceIds%/s%');",
+          "let symTotalDevices = new TcHmi.Symbol('%s%PLC1.MAIN.nTotalDevices%/s%');",
+          "",
+          "setTimeout(getRegconizedDeviceIds, 100);",
+          "setTimeout(getRegconizedDeviceAmount, 100);",
+          "",
+          "symRegconizedDeviceIds.readEx(function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        nRegconizedDeviceIds2 = data.value;",
+          "        console.log(nRegconizedDeviceIds);",
+          "    } else {",
+          "        console.log('Reading failed!!!');",
+          "    }",
+          "});",
+          "",
+          "symTotalDevices.readEx(function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        nTotalDevices2 = data.value;",
+          "        console.log(nTotalDevices);",
+          "    } else {",
+          "        console.log('Reading failed!!!');",
+          "    }",
+          "});\t",
+          "",
+          "function getRegconizedDeviceIds() {",
+          "\tfor (let i = 0; i < nRegconizedDeviceIds2; i++) {",
+          "\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::aId%/s%';",
+          "\t\tlet symId = new TcHmi.Symbol(sSymbolName);",
+          "\t\tsymId.readEx(function (data) {",
+          "    \t\tif (data.error === TcHmi.Errors.NONE) {",
+          "\t\t        let sDeviceId = '';",
+          "\t\t        for (let m = 0; m < 4; m++) {",
+          "\t\t        \tsDeviceId += String.fromCharCode(data.value[m]);",
+          "\t\t        }",
+          "  \t\t\t\tmyPieChart.data.labels.push(sDeviceId);",
+          "  \t\t\t\tmyPieChart.update();",
+          "    \t\t} else {",
+          "        \t\tconsole.log('Reading failed!!!');",
+          "    \t\t}",
+          "\t\t});\t\t\t\t",
+          "\t}",
+          "}",
+          "",
+          "function getRegconizedDeviceAmount() {",
+          "\tfor (let i = 0; i < nRegconizedDeviceIds2; i++) {",
+          "\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::nCount%/s%';",
+          "\t\tlet symCount = new TcHmi.Symbol(sSymbolName);",
+          "\t\tsymCount.readEx(function (data) {",
+          "    \t\tif (data.error === TcHmi.Errors.NONE) {",
+          "  \t\t\t\tmyPieChart.data.datasets[0].data.push(data.value);",
+          "  \t\t\t\tmyPieChart.update();",
+          "    \t\t} else {",
+          "        \t\tconsole.log('Reading failed!!!');",
+          "    \t\t}",
+          "\t\t});\t\t\t\t",
+          "\t}",
+          "}"
+        ],
+        "injectContextObject": true,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.nRegconizedDeviceIds%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "symbolExpression": "%s%PLC1.MAIN.nRegconizedDeviceIds%/s%"
+                },
+                "compare2": {
+                  "objectType": "FunctionExpression",
+                  "functionExpression": "0"
+                },
+                "compareOperator": ">",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let symRegconizedDeviceIds = new TcHmi.Symbol('%s%PLC1.MAIN.nRegconizedDeviceIds%/s%');",
+                  "",
+                  "let nCurrentRegconizedDeviceIds;",
+                  "",
+                  "symRegconizedDeviceIds.readEx(function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "        nCurrentRegconizedDeviceIds = data.value;",
+                  "        if (nCurrentRegconizedDeviceIds > nRegconizedDeviceIds2) {",
+                  "        \tnRegconizedDeviceIds2 = nCurrentRegconizedDeviceIds;",
+                  "        \tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + (nRegconizedDeviceIds2-1) + ']::aId%/s%';",
+                  "\t\t\tlet symId = new TcHmi.Symbol(sSymbolName);",
+                  "\t\t\tsymId.readEx(function (data) {",
+                  "    \t\t\tif (data.error === TcHmi.Errors.NONE) {",
+                  "\t\t        \tlet sDeviceId = '';",
+                  "\t\t        \tfor (let m = 0; m < 4; m++) {",
+                  "\t\t        \t\tsDeviceId += String.fromCharCode(data.value[m]);",
+                  "\t\t        \t}",
+                  "  \t\t\t\t\tmyPieChart.data.labels.push(sDeviceId);",
+                  "  \t\t\t\t\tmyPieChart.update();",
+                  "    \t\t\t} else {",
+                  "        \t\t\tconsole.log('Reading failed!!!');",
+                  "    \t\t\t}",
+                  "\t\t\t});",
+                  "        }",
+                  "    } else {",
+                  "        console.log('Reading failed!!!');",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.nTotalDevices%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "symbolExpression": "%s%PLC1.MAIN.nTotalDevices%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "value": 0
+                },
+                "compareOperator": ">",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let symTotalDevices = new TcHmi.Symbol('%s%PLC1.MAIN.nTotalDevices%/s%');",
+                  "",
+                  "let nCurrentTotalDevices;",
+                  "",
+                  "symTotalDevices.readEx(function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "        nCurrentTotalDevices = data.value;",
+                  "        if (nCurrentTotalDevices > nTotalDevices2) {",
+                  "        \tnTotalDevices2 = nCurrentTotalDevices;",
+                  "        \tconsole.log(nTotalDevices);",
+                  "        \tfor (let i = 0; i < nRegconizedDeviceIds2; i++) {",
+                  "\t\t\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::nCount%/s%';",
+                  "\t\t\t\tlet symCount = new TcHmi.Symbol(sSymbolName);",
+                  "\t\t\t\tsymCount.readEx(function (data) {",
+                  "    \t\t\t\tif (data.error === TcHmi.Errors.NONE) {",
+                  "  \t\t\t\t\t\tmyPieChart.data.datasets[0].data[i] = data.value;",
+                  "  \t\t\t\t\t\tmyPieChart.update();",
+                  "    \t\t\t\t} else {",
+                  "        \t\t\t\tconsole.log('Reading failed!!!');",
+                  "    \t\t\t\t}",
+                  "\t\t\t\t});\t\t\t\t",
+                  "\t\t\t}",
+                  "        }",
+                  "    } else {",
+                  "        console.log('Reading failed!!!');",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiHtmlHost_BarChart" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="556" data-tchmi-height-unit="px" data-tchmi-left="406" data-tchmi-left-unit="px" data-tchmi-top="144" data-tchmi-top-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-is-enabled="true">
+    <div class="liam-chart-container">
+        <canvas id="BarChart" width="895" height="545"></canvas>
+    </div>
+    <script>
+        var nRegconizedDeviceIds;
+        var nTotalDevices;
+        var ctx = document.getElementById('BarChart');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    barPercentage: 0.7,
+                    label: 'Product Number',
+                    data: [],
+                    borderWidth: 1,
+                    backgroundColor: [
+                        'rgba(255, 83, 26, 0.9)',
+                        'rgba(255, 26, 26, 0.9)',
+                        'rgba(0, 230, 0, 0.9)',
+                        'rgba(0, 255, 128, 0.9)',
+                        'rgba(51, 102, 255, 0.9)',
+                        'rgba(26, 198, 255, 0.9)',
+                        'rgba(230, 0, 230, 0.9)'
+
+                    ],                    
+                    borderColor: [
+                        'rgba(255, 83, 26, 2)',
+                        'rgba(255, 26, 26, 2)',
+                        'rgba(0, 230, 0, 2)',
+                        'rgba(0, 153, 0, 2 )',
+                        'rgba(51, 102, 255, 2)',
+                        'rgba(26, 198, 255, 2)',
+                        'rgba(153, 0, 153, 2)'
+                    ],
+
+                }]
+            },
+            //Config
+            options: {
+                //maintainAspectRatio: false,
+                plugins: {
+                    datalabels: {
+                        
+                        anchor: 'end',
+                        align: 'top',
+                        offset: -5,
+                        font: {
+                            weight: 'bold'
+                        },
+                        //Color of text
+                        color: 'black',
+                    }
+                },
+                tooltips: {
+                    enabled: false,
+                },
+                legend: {
+                    display: false,
+                    labels: {
+                        align: 'center',
+                        boxWidth: 10,
+                        fontSize: 10,
+                        fontColor: 'rgb(0, 0, 0)'
+                    }
+                },
+                title: {
+                    display: true,
+                    fontStyle: 'bold',
+                    offset: -5,
+                    text: 'Bar Chart',
+                    fontColor: 'rgb(0, 0, 0)'
+                },
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString:"Device Number",
+                            fontSize: 12,
+                            fontStyle: 'bold',
+                            fontColor: 'rgb(0, 0, 0)'
+                        },
+                        ticks: {
+                            beginAtZero: true,
+                            stepSize: 1,
+                            fontSize: 12,
+                            fontColor: 'rgb(0, 0, 0)'
+                        },
+                        gridLines: {
+                            display: true,
+                            color: "rgba(0, 45, 179, 0.2)"
+                        },
+                    }],
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Device ID",
+                            fontSize: 12,
+                            fontStyle: 'bold',
+                            fontColor: 'rgb(0, 0, 0)'
+                        },
+                        ticks: {
+                            fontSize: 10,
+                            fontColor: 'rgb(0, 0, 0)'
+                        },
+                        gridLines: {
+                            display: true,
+                            color: "rgba(0, 45, 179, 0.2)"
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.MAIN.nRegconizedDeviceIds%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "symbolExpression": "%s%PLC1.MAIN.nRegconizedDeviceIds%/s%"
+                },
+                "compare2": {
+                  "objectType": "FunctionExpression",
+                  "functionExpression": "0"
+                },
+                "compareOperator": ">",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let symRegconizedDeviceIds = new TcHmi.Symbol('%s%PLC1.MAIN.nRegconizedDeviceIds%/s%');",
+                  "",
+                  "let nCurrentRegconizedDeviceIds;",
+                  "",
+                  "symRegconizedDeviceIds.readEx(function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "        nCurrentRegconizedDeviceIds = data.value;",
+                  "        if (nCurrentRegconizedDeviceIds > nRegconizedDeviceIds) {",
+                  "        \tnRegconizedDeviceIds = nCurrentRegconizedDeviceIds;",
+                  "        \tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + (nRegconizedDeviceIds-1) + ']::aId%/s%';",
+                  "\t\t\tlet symId = new TcHmi.Symbol(sSymbolName);",
+                  "\t\t\tsymId.readEx(function (data) {",
+                  "    \t\t\tif (data.error === TcHmi.Errors.NONE) {",
+                  "\t\t        \tlet sDeviceId = '';",
+                  "\t\t        \tfor (let m = 0; m < 4; m++) {",
+                  "\t\t        \t\tsDeviceId += String.fromCharCode(data.value[m]);",
+                  "\t\t        \t}",
+                  "  \t\t\t\t\tmyBarChart.data.labels.push(sDeviceId);",
+                  "  \t\t\t\t\tmyBarChart.update();",
+                  "    \t\t\t} else {",
+                  "        \t\t\tconsole.log('Reading failed!!!');",
+                  "    \t\t\t}",
+                  "\t\t\t});",
+                  "        }",
+                  "    } else {",
+                  "        console.log('Reading failed!!!');",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "TcHmiHtmlHost_BarChart.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "let symRegconizedDeviceIds = new TcHmi.Symbol('%s%PLC1.MAIN.nRegconizedDeviceIds%/s%');",
+          "let symTotalDevices = new TcHmi.Symbol('%s%PLC1.MAIN.nTotalDevices%/s%');",
+          "",
+          "setTimeout(getRegconizedDeviceIds, 100);",
+          "setTimeout(getRegconizedDeviceAmount, 100);",
+          "",
+          "symRegconizedDeviceIds.readEx(function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        nRegconizedDeviceIds = data.value;",
+          "        console.log(nRegconizedDeviceIds);",
+          "    } else {",
+          "        console.log('Reading failed!!!');",
+          "    }",
+          "});",
+          "",
+          "symTotalDevices.readEx(function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        nTotalDevices = data.value;",
+          "        console.log(nTotalDevices);",
+          "    } else {",
+          "        console.log('Reading failed!!!');",
+          "    }",
+          "});\t",
+          "",
+          "function getRegconizedDeviceIds() {",
+          "\tfor (let i = 0; i < nRegconizedDeviceIds; i++) {",
+          "\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::aId%/s%';",
+          "\t\tlet symId = new TcHmi.Symbol(sSymbolName);",
+          "\t\tsymId.readEx(function (data) {",
+          "    \t\tif (data.error === TcHmi.Errors.NONE) {",
+          "\t\t        let sDeviceId = '';",
+          "\t\t        for (let m = 0; m < 4; m++) {",
+          "\t\t        \tsDeviceId += String.fromCharCode(data.value[m]);",
+          "\t\t        }",
+          "  \t\t\t\tmyBarChart.data.labels.push(sDeviceId);",
+          "  \t\t\t\tmyBarChart.update();",
+          "    \t\t} else {",
+          "        \t\tconsole.log('Reading failed!!!');",
+          "    \t\t}",
+          "\t\t});\t\t\t\t",
+          "\t}",
+          "}",
+          "",
+          "function getRegconizedDeviceAmount() {",
+          "\tfor (let i = 0; i < nRegconizedDeviceIds; i++) {",
+          "\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::nCount%/s%';",
+          "\t\tlet symCount = new TcHmi.Symbol(sSymbolName);",
+          "\t\tsymCount.readEx(function (data) {",
+          "    \t\tif (data.error === TcHmi.Errors.NONE) {",
+          "  \t\t\t\tmyBarChart.data.datasets[0].data.push(data.value);",
+          "  \t\t\t\tmyBarChart.update();",
+          "    \t\t} else {",
+          "        \t\tconsole.log('Reading failed!!!');",
+          "    \t\t}",
+          "\t\t});\t\t\t\t",
+          "\t}",
+          "}"
+        ],
+        "injectContextObject": true,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.nTotalDevices%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "symbolExpression": "%s%PLC1.MAIN.nTotalDevices%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "value": 0
+                },
+                "compareOperator": ">",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let symTotalDevices = new TcHmi.Symbol('%s%PLC1.MAIN.nTotalDevices%/s%');",
+                  "",
+                  "let nCurrentTotalDevices;",
+                  "",
+                  "symTotalDevices.readEx(function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "        nCurrentTotalDevices = data.value;",
+                  "        if (nCurrentTotalDevices > nTotalDevices) {",
+                  "        \tnTotalDevices = nCurrentTotalDevices;",
+                  "        \tconsole.log(nTotalDevices);",
+                  "        \tfor (let i = 0; i < nRegconizedDeviceIds; i++) {",
+                  "\t\t\t\tlet sSymbolName = '%s%PLC1.MAIN.aDeviceCount[' + i + ']::nCount%/s%';",
+                  "\t\t\t\tlet symCount = new TcHmi.Symbol(sSymbolName);",
+                  "\t\t\t\tsymCount.readEx(function (data) {",
+                  "    \t\t\t\tif (data.error === TcHmi.Errors.NONE) {",
+                  "  \t\t\t\t\t\tmyBarChart.data.datasets[0].data[i] = data.value;",
+                  "  \t\t\t\t\t\tmyBarChart.update();",
+                  "    \t\t\t\t} else {",
+                  "        \t\t\t\tconsole.log('Reading failed!!!');",
+                  "    \t\t\t\t}",
+                  "\t\t\t\t});\t\t\t\t",
+                  "\t\t\t}",
+                  "        }",
+                  "    } else {",
+                  "        console.log('Reading failed!!!');",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(238, 238, 238, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+[
+  {
+    "color": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "offsetX": 5.0,
+    "offsetXUnit": "px",
+    "offsetY": 5.0,
+    "offsetYUnit": "px",
+    "inset": false,
+    "blur": 5.0,
+    "blurUnit": "px",
+    "spread": -1.0,
+    "spreadUnit": "px"
+  }
+]
+</script>
+</div>
+<div id="TcHmiAdsState" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiAdsState" data-tchmi-ads-runtime="PLC1" data-tchmi-height="64" data-tchmi-height-unit="px" data-tchmi-left="1242" data-tchmi-left-unit="px" data-tchmi-server-interval="500" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-is-enabled="true">
+</div>
+</div>

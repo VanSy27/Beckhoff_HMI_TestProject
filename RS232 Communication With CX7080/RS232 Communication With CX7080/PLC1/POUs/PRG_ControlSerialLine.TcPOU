@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="PRG_ControlSerialLine" Id="{7f5be57b-29c0-4f35-bdd1-c005db8dca41}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_ControlSerialLine
+VAR
+	fbSerialLineControl: SerialLineControl;
+	stComInData AT %I*: PcComInData;
+	stComOutData AT %Q*: PcComOutData;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbSerialLineControl(
+	Mode:= ComSerialLineMode_t.SERIALLINEMODE_PC_COM_PORT, 
+	pComIn:= ADR(stComInData), 
+	pComOut:= ADR(stComOutData), 
+	SizeComIn:= UINT_TO_INT(SIZEOF(stComInData)), 
+	Error=> , 
+	ErrorID=> , 
+	TxBuffer:= GVL.TxBuffer, 
+	RxBuffer:= GVL.RxBuffer);]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_ControlSerialLine">
+      <LineId Id="9" Count="7" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

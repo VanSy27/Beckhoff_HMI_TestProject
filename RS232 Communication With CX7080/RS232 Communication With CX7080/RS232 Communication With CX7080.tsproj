@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.32">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{030FFB8A-A6E9-8903-2886-016014F84E04}" Namespace="Tc2_SerialCom" AutoDeleteType="true">PcComInData</Name>
+			<Comment><![CDATA[ This data type is corresponding to the
+   PC COM-Port data structure used in
+   the TwinCAT SystemManager. 
+   (KL-6xxx emulation mode with 64 data bytes)
+]]></Comment>
+			<BitSize>528</BitSize>
+			<SubItem>
+				<Name>SerStatus</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>64</Elements>
+				</ArrayInfo>
+				<BitSize>512</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{675EF7AA-B859-9A65-9CAB-B83BD9AA10F1}" Namespace="Tc2_SerialCom" AutoDeleteType="true">PcComOutData</Name>
+			<Comment><![CDATA[ This data type is corresponding to the
+   PC COM-Port data structure used in
+   the TwinCAT SystemManager. 
+   (KL-6xxx emulation mode with 64 data bytes)
+]]></Comment>
+			<BitSize>528</BitSize>
+			<SubItem>
+				<Name>SerCtrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>64</Elements>
+				</ArrayInfo>
+				<BitSize>512</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{E50392BE-1B2F-4AD3-B2DB-DF59BB12ECA8}" TargetNetId="5.95.143.164.1.1" ShowHideConfigurations="#x106">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+				<Task Id="4" Priority="1" CycleTime="20000" AmsPort="351" AdtTasks="true">
+					<Name>FastTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project GUID="{D5B08747-C215-442A-AC83-8FD4C2B0F436}" Name="PLC1" PrjFilePath="PLC1\PLC1.plcproj" TmcFilePath="PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E4446051-F326-756A-C7E3-0D05FDA272E8}">
+					<Name>PLC1 Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>FastTask Inputs</Name>
+						<Var>
+							<Name>PRG_ControlSerialLine.stComInData</Name>
+							<Type GUID="{030FFB8A-A6E9-8903-2886-016014F84E04}" Namespace="Tc2_SerialCom">PcComInData</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>FastTask Outputs</Name>
+						<Var>
+							<Name>PRG_ControlSerialLine.stComOutData</Name>
+							<Type GUID="{675EF7AA-B859-9A65-9CAB-B83BD9AA10F1}" Namespace="Tc2_SerialCom">PcComOutData</Type>
+						</Var>
+					</Vars>
+					<Contexts>
+						<Context>
+							<Id NeedCalleeCall="true">0</Id>
+							<Name>FastTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010040</OTCID>
+							</ManualConfig>
+							<Priority>1</Priority>
+							<CycleTime>2000000</CycleTime>
+						</Context>
+						<Context>
+							<Id NeedCalleeCall="true">1</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010030</OTCID>
+							</ManualConfig>
+							<Priority>20</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="1" OTCID="#x08502002"/>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="1" DevType="10">
+				<Name>Device 1 (NOV-DP-RAM)</Name>
+				<AddressInfo>
+					<Io_Ccat>
+						<Address>0</Address>
+						<Size>8192</Size>
+						<CcatAccessSlot>11</CcatAccessSlot>
+						<CcatSlotAddress>268443648</CcatSlotAddress>
+						<CcatSlotParam>656386</CcatSlotParam>
+						<IoAddress>0</IoAddress>
+					</Io_Ccat>
+				</AddressInfo>
+				<Vars VarGrpType="1" InsertType="1">
+					<Name>Inputs</Name>
+				</Vars>
+				<Vars VarGrpType="2" InsertType="1">
+					<Name>Outputs</Name>
+				</Vars>
+				<Image Id="1" ImageFlags="#x00000042" AddrType="5" ImageType="5">
+					<Name>Image</Name>
+				</Image>
+				<DpRam/>
+			</Device>
+			<Device Id="2" DevType="161" AmsNetId="5.95.143.164.3.1">
+				<Name>Device 2 (CX7000)</Name>
+				<DevData>3412000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
+				<Image Id="2" AddrType="1" ImageType="3" SizeIn="6" SizeOut="20">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9592" BoxFlags="#x00000020" AmsPort="1000">
+					<Name>Term 1 (CX7028)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0005" SuFlags="5" SyncUnitBits="false" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b746032" RevisionNo="#x00760000" InfoDataState="false" TimeoutMailbox2="5000" DownloadSlotCfg="true" CheckRevisionNoType="3" PortPhys="49" DownloadSlotCfgIP="true" MaxSlotCount="8" SlotPdoIncrement="16" SlotIndexIncrement="16" Type="CX7028-0000-0118" Desc="CX7028">
+						<SyncMan>001040002600010001000000400080004000001026010000</SyncMan>
+						<SyncMan>801040002200010002000000400080004000801022010000</SyncMan>
+						<SyncMan>001104002400010003000000000000000400001124010000</SyncMan>
+						<SyncMan>00120a002000010004000000000000000a00001220010000</SyncMan>
+						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001200010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010f400f410f400</BootStrapData>
+						<Pdo Name="DEV Inputs Device" Index="#x1a80" Flags="#x0011" SyncMan="3">
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+							</Entry>
+							<Entry Name="Diag" Index="#xf600" Sub="#x0d">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="TxPDO State" Index="#xf600" Sub="#x0e">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input cycle counter" Index="#xf600" Sub="#x0f">
+								<Type>BIT2</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Inputs Channel 1" Index="#x1a00" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6000" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Inputs Channel 2" Index="#x1a10" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6010" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7000" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 2" Index="#x1610" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7010" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Input Channel 1" Index="#x1a20" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6020" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Input Channel 2" Index="#x1a30" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6030" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 1" Index="#x1620" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7020" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 2" Index="#x1630" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7030" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Input Channel 1" Index="#x1a40" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6040" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Input Channel 2" Index="#x1a50" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6050" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Inputs Channel 1" Index="#x1a60" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6060" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Inputs Channel 2" Index="#x1a70" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6070" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Slot Name="InOut[1..2]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>6298484</ModuleIdent>
+							<ModuleIdent>7347060</ModuleIdent>
+							<ModuleIdent>3152756</ModuleIdent>
+							<Module Id="#x03090001" Type="DIO_2x" Class="">
+								<Name>Module 1 (DIO_2x)</Name>
+								<ImageId>405</ImageId>
+								<ModuleData>02000000741b3000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6656</PdoIndex>
+								<PdoIndex>6672</PdoIndex>
+								<PdoIndex>5632</PdoIndex>
+								<PdoIndex>5648</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="InOut[3..4]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>7028</ModuleIdent>
+							<ModuleIdent>5249908</ModuleIdent>
+							<Module Id="#x03090002" Type="DIO_2x" Class="">
+								<Name>Module 3 (DIO_2x)</Name>
+								<ImageId>405</ImageId>
+								<ModuleData>02000000741b0000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6688</PdoIndex>
+								<PdoIndex>6704</PdoIndex>
+								<PdoIndex>5664</PdoIndex>
+								<PdoIndex>5680</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="In[5..6]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>1055604</ModuleIdent>
+							<Module Id="#x03090003" Type="DI_2x" Class="">
+								<Name>Module 5 (DI_2x)</Name>
+								<ImageId>405</ImageId>
+								<ModuleData>02000000741b1000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6720</PdoIndex>
+								<PdoIndex>6736</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="In[7..8]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>4201332</ModuleIdent>
+							<ModuleIdent>2104180</ModuleIdent>
+							<Module Id="#x03090004" Type="DI_2x" Class="">
+								<Name>Module 7 (DI_2x)</Name>
+								<ImageId>405</ImageId>
+								<ModuleData>02000000741b2000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6752</PdoIndex>
+								<PdoIndex>6768</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+					</EtherCAT>
+				</Box>
+			</Device>
+			<Device Id="3" DevType="11" AmsPort="28675">
+				<Name>Device 3 (COM Port)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>268435456</Address>
+						<Offset>131072</Offset>
+						<Size>512</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="3" AddrType="1" ImageType="1">
+					<Name>Image</Name>
+				</Image>
+				<Serial Baud="9600" StopBit="1" RsType="1" UPSDisableSysShutdown="true" WaitTimeToShutdown="60" DataSize="64" BufSize="4096" DataBit="8" FifoSize="16" Timeout="300"/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-2002-0850-0020-500830000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^PLC1^PLC1 Instance">
+			<OwnerB Name="TIID^Device 3 (COM Port)">
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[0]" VarB="Inputs^Data1"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[10]" VarB="Inputs^Data11"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[11]" VarB="Inputs^Data12"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[12]" VarB="Inputs^Data13"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[13]" VarB="Inputs^Data14"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[14]" VarB="Inputs^Data15"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[15]" VarB="Inputs^Data16"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[16]" VarB="Inputs^Data17"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[17]" VarB="Inputs^Data18"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[18]" VarB="Inputs^Data19"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[19]" VarB="Inputs^Data20"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[1]" VarB="Inputs^Data2"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[20]" VarB="Inputs^Data21"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[21]" VarB="Inputs^Data22"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[22]" VarB="Inputs^Data23"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[23]" VarB="Inputs^Data24"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[24]" VarB="Inputs^Data25"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[25]" VarB="Inputs^Data26"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[26]" VarB="Inputs^Data27"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[27]" VarB="Inputs^Data28"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[28]" VarB="Inputs^Data29"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[29]" VarB="Inputs^Data30"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[2]" VarB="Inputs^Data3"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[30]" VarB="Inputs^Data31"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[31]" VarB="Inputs^Data32"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[32]" VarB="Inputs^Data33"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[33]" VarB="Inputs^Data34"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[34]" VarB="Inputs^Data35"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[35]" VarB="Inputs^Data36"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[36]" VarB="Inputs^Data37"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[37]" VarB="Inputs^Data38"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[38]" VarB="Inputs^Data39"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[39]" VarB="Inputs^Data40"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[3]" VarB="Inputs^Data4"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[40]" VarB="Inputs^Data41"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[41]" VarB="Inputs^Data42"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[42]" VarB="Inputs^Data43"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[43]" VarB="Inputs^Data44"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[44]" VarB="Inputs^Data45"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[45]" VarB="Inputs^Data46"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[46]" VarB="Inputs^Data47"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[47]" VarB="Inputs^Data48"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[48]" VarB="Inputs^Data49"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[49]" VarB="Inputs^Data50"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[4]" VarB="Inputs^Data5"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[50]" VarB="Inputs^Data51"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[51]" VarB="Inputs^Data52"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[52]" VarB="Inputs^Data53"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[53]" VarB="Inputs^Data54"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[54]" VarB="Inputs^Data55"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[55]" VarB="Inputs^Data56"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[56]" VarB="Inputs^Data57"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[57]" VarB="Inputs^Data58"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[58]" VarB="Inputs^Data59"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[59]" VarB="Inputs^Data60"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[5]" VarB="Inputs^Data6"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[60]" VarB="Inputs^Data61"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[61]" VarB="Inputs^Data62"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[62]" VarB="Inputs^Data63"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[63]" VarB="Inputs^Data64"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[6]" VarB="Inputs^Data7"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[7]" VarB="Inputs^Data8"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[8]" VarB="Inputs^Data9"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^D[9]" VarB="Inputs^Data10"/>
+				<Link VarA="FastTask Inputs^PRG_ControlSerialLine.stComInData^SerStatus" VarB="Inputs^Status"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[0]" VarB="Outputs^Data1"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[10]" VarB="Outputs^Data11"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[11]" VarB="Outputs^Data12"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[12]" VarB="Outputs^Data13"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[13]" VarB="Outputs^Data14"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[14]" VarB="Outputs^Data15"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[15]" VarB="Outputs^Data16"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[16]" VarB="Outputs^Data17"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[17]" VarB="Outputs^Data18"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[18]" VarB="Outputs^Data19"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[19]" VarB="Outputs^Data20"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[1]" VarB="Outputs^Data2"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[20]" VarB="Outputs^Data21"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[21]" VarB="Outputs^Data22"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[22]" VarB="Outputs^Data23"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[23]" VarB="Outputs^Data24"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[24]" VarB="Outputs^Data25"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[25]" VarB="Outputs^Data26"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[26]" VarB="Outputs^Data27"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[27]" VarB="Outputs^Data28"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[28]" VarB="Outputs^Data29"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[29]" VarB="Outputs^Data30"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[2]" VarB="Outputs^Data3"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[30]" VarB="Outputs^Data31"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[31]" VarB="Outputs^Data32"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[32]" VarB="Outputs^Data33"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[33]" VarB="Outputs^Data34"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[34]" VarB="Outputs^Data35"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[35]" VarB="Outputs^Data36"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[36]" VarB="Outputs^Data37"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[37]" VarB="Outputs^Data38"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[38]" VarB="Outputs^Data39"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[39]" VarB="Outputs^Data40"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[3]" VarB="Outputs^Data4"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[40]" VarB="Outputs^Data41"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[41]" VarB="Outputs^Data42"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[42]" VarB="Outputs^Data43"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[43]" VarB="Outputs^Data44"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[44]" VarB="Outputs^Data45"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[45]" VarB="Outputs^Data46"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[46]" VarB="Outputs^Data47"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[47]" VarB="Outputs^Data48"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[48]" VarB="Outputs^Data49"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[49]" VarB="Outputs^Data50"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[4]" VarB="Outputs^Data5"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[50]" VarB="Outputs^Data51"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[51]" VarB="Outputs^Data52"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[52]" VarB="Outputs^Data53"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[53]" VarB="Outputs^Data54"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[54]" VarB="Outputs^Data55"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[55]" VarB="Outputs^Data56"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[56]" VarB="Outputs^Data57"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[57]" VarB="Outputs^Data58"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[58]" VarB="Outputs^Data59"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[59]" VarB="Outputs^Data60"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[5]" VarB="Outputs^Data6"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[60]" VarB="Outputs^Data61"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[61]" VarB="Outputs^Data62"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[62]" VarB="Outputs^Data63"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[63]" VarB="Outputs^Data64"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[6]" VarB="Outputs^Data7"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[7]" VarB="Outputs^Data8"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[8]" VarB="Outputs^Data9"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^D[9]" VarB="Outputs^Data10"/>
+				<Link VarA="FastTask Outputs^PRG_ControlSerialLine.stComOutData^SerCtrl" VarB="Outputs^Ctrl"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>
